@@ -14,56 +14,70 @@ def home():
 
 @app.route("/api/assessment", methods=["POST"])
 def assessment():
+
     data = request.get_json()
 
-    dsa = data.get("dsa", 0)
-    sql = data.get("sql", 0)
-    aptitude = data.get("aptitude", 0)
-    communication = data.get("communication", 0)
-
-    employability_score = (
-        dsa * 0.30 +
-        sql * 0.25 +
-        aptitude * 0.25 +
-        communication * 0.20
-    )
+    skill_scores = data.get("skill_scores", {})
 
     weak_areas = []
-
-    if dsa < 60:
-        weak_areas.append("DSA")
-
-    if sql < 60:
-        weak_areas.append("SQL")
-
-    if aptitude < 60:
-        weak_areas.append("Aptitude")
-
-    if communication < 60:
-        weak_areas.append("Communication")
-
     recommendations = []
 
-    if "DSA" in weak_areas:
-        recommendations.append("Practice Arrays, Hashing and Two Pointer problems")
+    recommendation_map = {
+        "DSA": "Practice Arrays, Hashing, Two Pointer and Sliding Window problems.",
+        "OOP": "Revise Encapsulation, Inheritance, Polymorphism and Abstraction.",
+        "DBMS": "Revise Keys, Normalization, Joins and Transactions.",
+        "Operating Systems":
+            "Revise Processes, Threads, Scheduling and Memory Management.",
+        "Computer Networks":
+            "Revise TCP/IP, OSI Model, HTTP/HTTPS and Networking protocols.",
+        "SQL":
+            "Revise SQL Joins, GROUP BY, HAVING and Window Functions.",
+        "Python":
+            "Practice Python data structures, functions and Pandas.",
+        "Statistics":
+            "Revise Mean, Median, Mode, Probability and basic statistics.",
+        "Aptitude":
+            "Practice Percentages, Profit & Loss, Ratios and Logical Reasoning.",
+        "Communication":
+            "Practice explaining technical insights clearly to non-technical stakeholders.",
+        "HTML/CSS":
+            "Revise semantic HTML, CSS layouts, Flexbox and responsive design.",
+        "JavaScript":
+            "Revise variables, functions, arrays, objects and ES6 concepts.",
+        "React":
+            "Revise components, props, state, useState and useEffect.",
+        "Web":
+            "Revise HTTP, HTTPS, APIs and basic web architecture.",
+        "ETL":
+            "Revise Extract, Transform, Load and data pipeline concepts.",
+        "Cloud":
+            "Revise cloud storage, compute and basic AWS/Azure services.",
+        "Big Data":
+            "Revise Apache Spark, distributed processing and big-data concepts."
+    }
 
-    if "SQL" in weak_areas:
-        recommendations.append("Revise SQL Joins, GROUP BY and Window Functions")
+    # Find weak areas
+    for skill, score in skill_scores.items():
 
-    if "Aptitude" in weak_areas:
-        recommendations.append("Practice Quantitative Aptitude and Logical Reasoning")
+        if score < 70:
+            weak_areas.append(skill)
 
-    if "Communication" in weak_areas:
-        recommendations.append("Practice HR questions and technical explanations")
+            if skill in recommendation_map:
+                recommendations.append(
+                    recommendation_map[skill]
+                )
+
+    # Overall score
+    if skill_scores:
+        overall_score = round(
+            sum(skill_scores.values()) / len(skill_scores)
+        )
+    else:
+        overall_score = 0
 
     return jsonify({
-        "employability_score": round(employability_score, 2),
-        "skill_scores": {
-            "DSA": dsa,
-            "SQL": sql,
-            "Aptitude": aptitude,
-            "Communication": communication
-        },
+        "employability_score": overall_score,
+        "skill_scores": skill_scores,
         "weak_areas": weak_areas,
         "recommendations": recommendations
     })

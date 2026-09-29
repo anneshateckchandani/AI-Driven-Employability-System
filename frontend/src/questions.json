@@ -1,0 +1,419 @@
+[
+  {
+    "id": 1,
+    "role": "Software Developer",
+    "skill": "DSA",
+    "question": "Which data structure provides O(1) average-time lookup?",
+    "options": ["Array", "HashSet", "Linked List", "Stack"],
+    "answer": 1
+  },
+  {
+    "id": 2,
+    "role": "Software Developer",
+    "skill": "DSA",
+    "question": "Which technique is commonly used to find a pair with a target sum in a sorted array?",
+    "options": ["Two Pointers", "DFS", "BFS", "Recursion"],
+    "answer": 0
+  },
+  {
+    "id": 3,
+    "role": "Software Developer",
+    "skill": "OOP",
+    "question": "Which OOP concept allows a child class to provide its own implementation of a method?",
+    "options": ["Encapsulation", "Inheritance", "Method Overriding", "Abstraction"],
+    "answer": 2
+  },
+  {
+    "id": 4,
+    "role": "Software Developer",
+    "skill": "Operating Systems",
+    "question": "Which of the following is used for communication between processes?",
+    "options": ["IPC", "HTML", "CSS", "DNS"],
+    "answer": 0
+  },
+  {
+    "id": 5,
+    "role": "Software Developer",
+    "skill": "Computer Networks",
+    "question": "Which protocol is connection-oriented?",
+    "options": ["UDP", "TCP", "IP", "DNS"],
+    "answer": 1
+  },
+  {
+    "id": 6,
+    "role": "Software Developer",
+    "skill": "DBMS",
+    "question": "Which normal form removes partial dependency?",
+    "options": ["1NF", "2NF", "3NF", "BCNF"],
+    "answer": 1
+  },
+  {
+    "id": 25,
+    "role": "Software Developer",
+    "skill": "DSA",
+    "question": "Which data structure follows the FIFO principle?",
+    "options": ["Stack", "Queue", "Tree", "Graph"],
+    "answer": 1
+  },
+  {
+    "id": 26,
+    "role": "Software Developer",
+    "skill": "DSA",
+    "question": "What is the time complexity of binary search on a sorted array?",
+    "options": ["O(1)", "O(n)", "O(log n)", "O(n²)"],
+    "answer": 2
+  },
+  {
+    "id": 27,
+    "role": "Software Developer",
+    "skill": "OOP",
+    "question": "Which OOP principle hides internal implementation details from the user?",
+    "options": ["Inheritance", "Abstraction", "Polymorphism", "Overloading"],
+    "answer": 1
+  },
+  {
+    "id": 28,
+    "role": "Software Developer",
+    "skill": "Operating Systems",
+    "question": "Which scheduling algorithm gives each process a fixed time slice?",
+    "options": ["FCFS", "Round Robin", "Priority Scheduling", "SJF"],
+    "answer": 1
+  },
+  {
+    "id": 29,
+    "role": "Software Developer",
+    "skill": "Computer Networks",
+    "question": "Which layer of the OSI model is responsible for routing?",
+    "options": ["Transport", "Network", "Session", "Presentation"],
+    "answer": 1
+  },
+  {
+    "id": 30,
+    "role": "Software Developer",
+    "skill": "DBMS",
+    "question": "Which SQL command is used to remove a table?",
+    "options": ["DELETE", "DROP", "REMOVE", "CLEAR"],
+    "answer": 1
+  },
+
+  {
+    "id": 7,
+    "role": "Data Analyst",
+    "skill": "SQL",
+    "question": "Which SQL clause is used to filter grouped records?",
+    "options": ["WHERE", "ORDER BY", "HAVING", "LIMIT"],
+    "answer": 2
+  },
+  {
+    "id": 8,
+    "role": "Data Analyst",
+    "skill": "SQL",
+    "question": "Which SQL function assigns a rank to rows while allowing ties?",
+    "options": ["ROW_NUMBER()", "RANK()", "COUNT()", "SUM()"],
+    "answer": 1
+  },
+  {
+    "id": 9,
+    "role": "Data Analyst",
+    "skill": "Python",
+    "question": "Which Python library is commonly used for tabular data analysis?",
+    "options": ["Pandas", "Flask", "Requests", "Tkinter"],
+    "answer": 0
+  },
+  {
+    "id": 10,
+    "role": "Data Analyst",
+    "skill": "Statistics",
+    "question": "Which measure represents the middle value of an ordered dataset?",
+    "options": ["Mean", "Median", "Mode", "Range"],
+    "answer": 1
+  },
+  {
+    "id": 11,
+    "role": "Data Analyst",
+    "skill": "Aptitude",
+    "question": "If a product costs ₹800 and is sold for ₹1000, what is the profit percentage?",
+    "options": ["20%", "25%", "30%", "15%"],
+    "answer": 1
+  },
+  {
+    "id": 12,
+    "role": "Data Analyst",
+    "skill": "Communication",
+    "question": "When presenting a data insight to a non-technical stakeholder, what should you prioritize?",
+    "options": [
+      "Complex technical terms",
+      "Raw code",
+      "Clear business impact",
+      "Only statistical formulas"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 31,
+    "role": "Data Analyst",
+    "skill": "SQL",
+    "question": "Which JOIN returns only matching records from both tables?",
+    "options": ["LEFT JOIN", "RIGHT JOIN", "INNER JOIN", "FULL JOIN"],
+    "answer": 2
+  },
+  {
+    "id": 32,
+    "role": "Data Analyst",
+    "skill": "SQL",
+    "question": "Which SQL function is used to count rows?",
+    "options": ["SUM()", "COUNT()", "AVG()", "MAX()"],
+    "answer": 1
+  },
+  {
+    "id": 33,
+    "role": "Data Analyst",
+    "skill": "Python",
+    "question": "Which Pandas function is commonly used to read a CSV file?",
+    "options": ["read_csv()", "open_csv()", "load_csv()", "import_csv()"],
+    "answer": 0
+  },
+  {
+    "id": 34,
+    "role": "Data Analyst",
+    "skill": "Statistics",
+    "question": "Which measure is most affected by extreme outliers?",
+    "options": ["Median", "Mean", "Mode", "Quartile"],
+    "answer": 1
+  },
+  {
+    "id": 35,
+    "role": "Data Analyst",
+    "skill": "Aptitude",
+    "question": "A value increases from 200 to 250. What is the percentage increase?",
+    "options": ["20%", "25%", "30%", "50%"],
+    "answer": 1
+  },
+  {
+    "id": 36,
+    "role": "Data Analyst",
+    "skill": "Communication",
+    "question": "What is the best way to communicate an important trend in a dataset?",
+    "options": [
+      "Show every raw record",
+      "Use a clear visualization and explanation",
+      "Use only technical terminology",
+      "Avoid explaining the result"
+    ],
+    "answer": 1
+  },
+
+  {
+    "id": 13,
+    "role": "Data Engineer",
+    "skill": "SQL",
+    "question": "Which JOIN returns all records from the left table and matching records from the right table?",
+    "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "CROSS JOIN"],
+    "answer": 1
+  },
+  {
+    "id": 14,
+    "role": "Data Engineer",
+    "skill": "Python",
+    "question": "Which Python data structure stores key-value pairs?",
+    "options": ["List", "Tuple", "Dictionary", "Set"],
+    "answer": 2
+  },
+  {
+    "id": 15,
+    "role": "Data Engineer",
+    "skill": "ETL",
+    "question": "What does ETL stand for?",
+    "options": [
+      "Extract, Transform, Load",
+      "Execute, Transfer, Link",
+      "Extract, Test, Launch",
+      "Encode, Transform, Load"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 16,
+    "role": "Data Engineer",
+    "skill": "Cloud",
+    "question": "Which service is primarily used for object storage in AWS?",
+    "options": ["EC2", "S3", "RDS", "Lambda"],
+    "answer": 1
+  },
+  {
+    "id": 17,
+    "role": "Data Engineer",
+    "skill": "Big Data",
+    "question": "Which technology is commonly used for distributed data processing?",
+    "options": ["Apache Spark", "HTML", "CSS", "Git"],
+    "answer": 0
+  },
+  {
+    "id": 18,
+    "role": "Data Engineer",
+    "skill": "DBMS",
+    "question": "What is the main purpose of a primary key?",
+    "options": [
+      "Allow duplicate records",
+      "Uniquely identify records",
+      "Sort all records",
+      "Delete records"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 37,
+    "role": "Data Engineer",
+    "skill": "SQL",
+    "question": "Which SQL clause is used to sort query results?",
+    "options": ["GROUP BY", "ORDER BY", "HAVING", "WHERE"],
+    "answer": 1
+  },
+  {
+    "id": 38,
+    "role": "Data Engineer",
+    "skill": "Python",
+    "question": "Which keyword is used to define a function in Python?",
+    "options": ["function", "def", "func", "define"],
+    "answer": 1
+  },
+  {
+    "id": 39,
+    "role": "Data Engineer",
+    "skill": "ETL",
+    "question": "Which step in ETL involves cleaning and modifying data?",
+    "options": ["Extract", "Transform", "Load", "Store"],
+    "answer": 1
+  },
+  {
+    "id": 40,
+    "role": "Data Engineer",
+    "skill": "Cloud",
+    "question": "Which AWS service provides virtual servers?",
+    "options": ["S3", "EC2", "RDS", "CloudFront"],
+    "answer": 1
+  },
+  {
+    "id": 41,
+    "role": "Data Engineer",
+    "skill": "Big Data",
+    "question": "Which component of Spark is mainly used for structured data processing?",
+    "options": ["Spark SQL", "Spark UI", "Spark Shell", "Spark Core only"],
+    "answer": 0
+  },
+  {
+    "id": 42,
+    "role": "Data Engineer",
+    "skill": "DBMS",
+    "question": "Which key establishes a relationship between two tables?",
+    "options": ["Primary Key", "Foreign Key", "Candidate Key", "Super Key"],
+    "answer": 1
+  },
+
+  {
+    "id": 19,
+    "role": "Frontend Developer",
+    "skill": "HTML/CSS",
+    "question": "Which HTML element is most appropriate for the main navigation links?",
+    "options": ["<nav>", "<div>", "<span>", "<footer>"],
+    "answer": 0
+  },
+  {
+    "id": 20,
+    "role": "Frontend Developer",
+    "skill": "JavaScript",
+    "question": "Which keyword declares a block-scoped variable that can be reassigned?",
+    "options": ["var", "let", "const", "static"],
+    "answer": 1
+  },
+  {
+    "id": 21,
+    "role": "Frontend Developer",
+    "skill": "React",
+    "question": "Which React Hook is commonly used to manage component state?",
+    "options": ["useState", "useRoute", "useHTML", "useStyle"],
+    "answer": 0
+  },
+  {
+    "id": 22,
+    "role": "Frontend Developer",
+    "skill": "React",
+    "question": "What is the purpose of props in React?",
+    "options": [
+      "Store global CSS",
+      "Pass data from parent to child",
+      "Create databases",
+      "Run SQL queries"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 23,
+    "role": "Frontend Developer",
+    "skill": "Web",
+    "question": "Which protocol is commonly used to securely transfer data between a browser and web server?",
+    "options": ["HTTP", "HTTPS", "FTP", "SMTP"],
+    "answer": 1
+  },
+  {
+    "id": 24,
+    "role": "Frontend Developer",
+    "skill": "DSA",
+    "question": "Which data structure follows the LIFO principle?",
+    "options": ["Queue", "Stack", "Heap", "Graph"],
+    "answer": 1
+  },
+  {
+    "id": 43,
+    "role": "Frontend Developer",
+    "skill": "HTML/CSS",
+    "question": "Which CSS property is used to change the text color?",
+    "options": ["font-style", "color", "background", "text-align"],
+    "answer": 1
+  },
+  {
+    "id": 44,
+    "role": "Frontend Developer",
+    "skill": "HTML/CSS",
+    "question": "Which CSS layout system is useful for arranging items in rows and columns?",
+    "options": ["Flexbox", "CSS Grid", "Float only", "Inline only"],
+    "answer": 1
+  },
+  {
+    "id": 45,
+    "role": "Frontend Developer",
+    "skill": "JavaScript",
+    "question": "Which method adds an element to the end of a JavaScript array?",
+    "options": ["pop()", "push()", "shift()", "slice()"],
+    "answer": 1
+  },
+  {
+    "id": 46,
+    "role": "Frontend Developer",
+    "skill": "React",
+    "question": "Which React Hook is commonly used for side effects?",
+    "options": ["useState", "useEffect", "useProps", "useComponent"],
+    "answer": 1
+  },
+  {
+    "id": 47,
+    "role": "Frontend Developer",
+    "skill": "Web",
+    "question": "What does responsive web design mean?",
+    "options": [
+      "A website that only works on desktops",
+      "A website that adapts to different screen sizes",
+      "A website without CSS",
+      "A website that only uses JavaScript"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 48,
+    "role": "Frontend Developer",
+    "skill": "JavaScript",
+    "question": "Which operator checks both value and type equality in JavaScript?",
+    "options": ["=", "==", "===", "!="],
+    "answer": 2
+  }
+]

@@ -31,49 +31,85 @@ header p {
 }
 
 main {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
-.card,
-.result-card {
+.welcome-card {
   background: white;
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 35px;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
-h2 {
+.welcome-card h2 {
   margin-top: 0;
+  text-align: center;
+  font-size: 28px;
 }
 
-form {
+.welcome-card > p {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.role-grid {
   display: grid;
-  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
-label {
-  font-weight: bold;
-  margin-top: 10px;
+.role-card {
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
 }
 
-input {
-  padding: 12px;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  font-size: 15px;
+.role-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.role-card.selected {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.role-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.role-card h3 {
+  margin: 10px 0;
+}
+
+.role-card p {
+  color: #6b7280;
+  min-height: 40px;
+}
+
+.role-card input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
 }
 
 button {
-  margin-top: 20px;
-  padding: 13px;
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px;
   border: none;
   border-radius: 8px;
   background: #2563eb;
   color: white;
-  font-size: 16px;
+  font-size: 17px;
   cursor: pointer;
 }
 
@@ -81,35 +117,248 @@ button:hover {
   background: #1d4ed8;
 }
 
-.score {
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
-  margin: 25px 0;
-}
-
-.skills {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.skills p {
-  background: #f3f4f6;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-@media (max-width: 600px) {
-  .skills {
+@media (max-width: 700px) {
+  .role-grid {
     grid-template-columns: 1fr;
   }
 
   header h1 {
     font-size: 25px;
   }
+}
+.assessment-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  max-width: 850px;
+  margin: auto;
+}
+
+
+.progress {
+  text-align: center;
+  color: #2563eb;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.assessment-card h2 {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option {
+  border: 2px solid #e5e7eb;
+  padding: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 17px;
+  transition: 0.2s;
+}
+
+.option:hover {
+  border-color: #2563eb;
+  background: #f8faff;
+}
+
+.option-selected {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.option input {
+  width: 18px;
+  height: 18px;
+}
+/* Fix assessment question visibility */
+.assessment-card h2 {
+  color: #111827 !important;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  margin: 20px 0 35px;
+}
+
+.assessment-card {
+  color: #111827;
+}
+
+.option {
+  color: #111827;
+  background: white;
+}
+
+.option span {
+  color: #111827;
+  font-weight: 500;
+}
+/* -------------------------------
+   RESULT PAGE
+-------------------------------- */
+
+.result-card {
+  background: white;
+  padding: 45px;
+  border-radius: 20px;
+  max-width: 850px;
+  margin: 40px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.score-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 25px;
+  background: #2563eb;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-circle span {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.score-circle small {
+  font-size: 14px;
+}
+
+.result-card h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.result-summary {
+  color: #555;
+  margin-bottom: 35px;
+}
+
+.result-card h3 {
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+
+/* Skill Scores */
+
+.skill-results {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.skill-result {
+  text-align: left;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 10px;
+}
+
+/* Weak Areas */
+
+.weak-areas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.weak-badge {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.success-message {
+  background: #dcfce7;
+  color: #166534;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Recommendations */
+
+.recommendations {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recommendation {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f3f6ff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.recommendation p {
+  margin: 0;
+}
+
+/* Buttons */
+
+.result-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.result-buttons button {
+  flex: 1;
+}
+
+.secondary-button {
+  background: #64748b !important;
+}
+
+.question-skill {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 7px 14px;
+  background: #eef2ff;
+  color: #3730a3;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
 }
