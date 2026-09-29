@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+header {
+  background: #182848;
+  color: white;
+  padding: 45px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+header p {
+  margin: 0;
+  font-size: 17px;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.card,
+.result-card {
+  background: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.score {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.skills p {
+  background: #f3f4f6;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+}
